@@ -1,4 +1,4 @@
-package com.michaelR.IntroProgramming.Assignment_2;
+package com.calculator.interfaces;
 
 /**
  * Hello world!
