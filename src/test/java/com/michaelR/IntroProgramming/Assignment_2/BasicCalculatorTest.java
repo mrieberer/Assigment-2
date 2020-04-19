@@ -11,21 +11,32 @@ public class BasicCalculatorTest {
 	BasicCalculator bc = new BasicCalculator();
 	Random random = new Random();
 	public static final Logger LOG = Logger.getLogger(BasicCalculator.class.getName());
-	int NumberOfRepetitions = 1;
+	int NumberOfRepetitions = 10;
 
 	@Test
 	public void testAddition() {
 		double firstTestParameter = 0.0;
 		double secondTestParameter = 0.0;
 		double expectedResult = 0.0;
+		int i = 0;
 		
+		/*
 		for (int i = 0; i < NumberOfRepetitions; i++) {
 			firstTestParameter = random.nextDouble();
 			secondTestParameter = random.nextDouble();
 			expectedResult = firstTestParameter + secondTestParameter;
 			LOG.info("Testing method BasicCalculator.addition with parmaeters: " + firstTestParameter + " and " + secondTestParameter);
 			assertEquals(bc.addition(firstTestParameter, secondTestParameter), expectedResult, 0);
-		}
+		} */
+		
+        do {
+			expectedResult = firstTestParameter + secondTestParameter;
+			LOG.info("Testing method BasicCalculator.addition with parmaeters: " + firstTestParameter + " and " + secondTestParameter);
+			assertEquals(bc.addition(firstTestParameter, secondTestParameter), expectedResult, 0);
+			firstTestParameter = (random.nextDouble()-0.5)*20000;
+			secondTestParameter = (random.nextDouble()-0.5)*20000;
+            i++;
+        } while (i < NumberOfRepetitions);
 	}
 	
 	@Test
