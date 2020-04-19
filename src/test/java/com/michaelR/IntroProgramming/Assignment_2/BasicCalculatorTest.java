@@ -13,10 +13,22 @@ public class BasicCalculatorTest {
 	@Test
 	public void testAddition() {
 		assertEquals(bc.addition(3, 5), 8, 0);
-		assertEquals(bc.addition(13, 52), 65, 0);
-		assertEquals(bc.addition(3, 5), 8, 0);
-		assertEquals(bc.addition(13, 52), 65, 0);
 	}
+	
+	@Test
+	public void testSubtraction() {
+		assertEquals(bc.subtraction(9, 5), 4, 0);
+	}
+	
+	@Test
+	public void testMultiplication() {
+		assertEquals(bc.multiplication(3, 5), 15, 0);
+	}
+	
+	@Test
+	public void testDivsion() {
+		assertEquals(bc.division(30, 5), 6, 0);
+	} 
 
 }
 
