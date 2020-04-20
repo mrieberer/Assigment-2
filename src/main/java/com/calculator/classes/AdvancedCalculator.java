@@ -15,8 +15,8 @@ public class AdvancedCalculator extends BasicCalculator implements AdvancedOpera
 		return pow(base,exponent);
 	}
 	public double cubeRoot(double number) {
-		return pow(number,.333333);
-	}
+	return cbrt(number);
+}
 	public double remainder(double dividend, double divisor) {
 		return dividend % divisor;
 	}

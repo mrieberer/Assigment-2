@@ -1,6 +1,7 @@
 package com.michaelR.IntroProgramming.Assignment_2;
 import static java.lang.Math.pow;
 import static java.lang.Math.sqrt;
+import static java.lang.Math.cbrt;
 import static org.junit.Assert.*;
 import java.util.Random;
 import java.util.logging.Logger;
@@ -22,11 +23,13 @@ public class AdvancedCalculatorTest {
 		
 		for (int i = 0; i < NumberOfRepetitions; i++) {
 			firstTestParameter = random.nextDouble();
-			expectedResult = pow(firstTestParameter, 0.333333);
+			expectedResult = cbrt(firstTestParameter);
 			LOG.info("Testing method AdvancedCalculator.cubeRoot with parameter: " + firstTestParameter);
 			assertEquals(ac.cubeRoot(firstTestParameter), expectedResult, 0.001);
 		}
 	}
+	
+	
 	
 	@Test
 	public void testRemainder() {
