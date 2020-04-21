@@ -73,13 +73,14 @@ public class BasicCalculatorTest {
 		int i = 0;
 
 		do {
+			expectedResult =  firstTestParameter / secondTestParameter;/*
 			try{
 				expectedResult =  firstTestParameter / secondTestParameter;
 				//System.out.println("NO exception!");
 			} catch(ArithmeticException e){
 				//System.out.println("exception!");
 				expectedResult = 0.0;
-			}     
+			}     */
 			LOG.info("Testing method BasicCalculator.division with parameters: " + firstTestParameter + " and " + secondTestParameter);
 			assertEquals(bc.division(firstTestParameter, secondTestParameter), expectedResult, 0);
 

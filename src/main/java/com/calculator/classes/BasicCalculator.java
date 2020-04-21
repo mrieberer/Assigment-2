@@ -13,12 +13,13 @@ public class BasicCalculator implements BasicOperations {
 		return firstNumber * secondNumber;
 	}
 	public double division(double firstNumber, double secondNumber) {
-		double quotient = 0.0;
+		//double quotient = 0.0;
+		double quotient = firstNumber / secondNumber; /*
         try{
         	quotient =  firstNumber / secondNumber;
         } catch(ArithmeticException e){         	//this section is not executed for secondNumber = 0.0
             e.getMessage();
-        }
+        }*/
         return quotient;
 	}
 }
