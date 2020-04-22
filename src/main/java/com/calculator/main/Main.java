@@ -20,8 +20,5 @@ public class Main {
 		System.out.println(ac.toThePowerOf(4,4));
 		System.out.println(ac.cubeRoot(125));
 		System.out.println(ac.remainder(5,3));
-		
-		
-		
 	}
 }
